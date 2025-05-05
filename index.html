@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <link
+      rel="shortcut icon"
+      href="./images/OyeyipoEmmanuel-logo.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+    <title>Oyeyipo-Emmanuel | Frontend Developer</title>
+  </head>
+
+  <body class="bg-[#2B2C2F] py-4 scroll-smooth">
+    
+    <!-- <div class="hidden" id="content" >/ -->
+    <!-- NAV START -->
+    <nav class="fixed top-0 w-full py-6 z-20 transition-all duration-300">
+      <section class="flex justify-between items-center">
+        <div class="pl-5">
+          <img
+            src="./images/OyeyipoEmmanuel-logo.png"
+            alt="Oyeyipo Emmanuel - Frontend web Developer"
+            class="max-w-36"
+          />
+        </div>
+        <div class="lg:hidden">
+          <i
+            class="fa-solid purpleBgColor px-3 py-2 text-2xl font-extrabold rounded-md text-white cursor-pointer hover:opacity-90 hover:transition-all hover:duration-300"
+            id="toggleNavIcon"
+          ></i>
+          <!-- <i
+            class="hidden fa-solid fa-xmark purpleBgColor px-3 py-2 text-2xl font-extrabold rounded-md text-white cursor-pointer hover:opacity-90 hover:transition-all hover:duration-300"
+            id="closeNavIcon"
+          ></i> -->
+        </div>
+
+        <ul
+          class="hidden lg:flex justify-between items-center space-x-12 text-white"
+        >
+          <li class="hoverBorder text-xl"><a href="#">Home</a></li>
+          <li class="hoverBorder text-xl">
+            <a href="#Qualification" id="navLinks">Qualification</a>
+          </li>
+          <li class="hoverBorder text-xl"><a href="#">About</a></li>
+          <li class="hoverBorder text-xl"><a href="#skills">Skills</a></li>
+          <li class="hoverBorder text-xl">
+            <a href="#" id="navLinks">Projects</a>
+          </li>
+          <li class="hoverBorder text-xl"><a href="#contact">Contact</a></li>
+        </ul>
+      </section>
+      <section
+        class="hidden purpleBgColor absolute w-full rounded-md mt-3 p-4 lg:hidden"
+        id="mobileNavContent"
+      >
+        <ul class="flex flex-col space-y-4 text-white">
+          <a href="#" id="navLinks" class="hoverBorder"
+            ><li class="text-2xl">Home</li></a
+          >
+          <a href="#Qualification" id="navLinks" class="hoverBorder"
+            ><li class="text-2xl">Qualification</li></a
+          >
+          <a href="#" id="navLinks" class="hoverBorder"
+            ><li class="text-2xl">About</li></a
+          >
+          <a href="#skills" id="navLinks" class="hoverBorder"
+            ><li class="text-2xl">Skills</li></a
+          >
+          <a href="#" id="navLinks" class="hoverBorder"
+            ><li class="text-2xl">Project</li></a
+          >
+          <a href="#contact" id="navLinks" class="hoverBorder"
+            ><li class="text-2xl">Contact</li></a
+          >
+        </ul>
+      </section>
+    </nav>
+    <div class="flex items-center justify-center h-screen" id="loader">
+      <img src="./images/Ghost-unscreen.gif" class="w-48" />
+    </div>
+    <main class="hidden mt-28 px-3" id="content" data-aos="fade-up">
+      <!-- Qualification start -->
+      <section
+        id="Qualification"
+        class="flex flex-col justify-center items-center"
+      >
+        <h1 class="text-white text-4xl font-semibold">
+          My <span class="purpleTextColor">Qualification</span>
+        </h1>
+        <div
+          class="flex flex-col space-y-20 py-14 md:flex-row md:space-y-0 md:justify-between md:space-x-24 lg:space-x-36"
+        >
+          <!-- Experience Start -->
+          <div class="text-white" id="experience" data-aos="fade-right">
+            <span class="flex space-x-2 items-center">
+              <i class="fa-solid fa-briefcase text-2xl"></i>
+              <h3 class="text-2xl">Experience</h3>
+            </span>
+            <!-- Experience 1 start -->
+            <div class="flex space-x-12 pt-8" id="exp1">
+              <div class="relative">
+                <span
+                  class="absolute w-3 h-3 purpleBgColor rounded-full"
+                ></span>
+                <span
+                  class="absolute top-3 left-[.3rem] w-[2px] h-full purpleBgColor"
+                ></span>
+              </div>
+              <div class="" id="exp1-content">
+                <h2 class="font-semibold">Project X</h2>
+                <p class="text-gray-500">Frontend Web Developer</p>
+
+                <span
+                  class="flex space-x-3 items-center pt-4 text-md purpleTextColor"
+                >
+                  <i class="fa-solid fa-calendar"></i>
+                  <p>Jan 2025 - Present</p>
+                </span>
+              </div>
+            </div>
+            <!-- Experience 1 end -->
+
+            <!-- Experience 2 start -->
+            <div class="flex space-x-12 pt-8" id="exp2">
+              <div class="relative">
+                <span
+                  class="absolute w-3 h-3 purpleBgColor rounded-full"
+                ></span>
+                <span
+                  class="absolute top-3 left-[.3rem] w-[2px] h-full purpleBgColor"
+                ></span>
+              </div>
+              <div class="" id="exp2-content">
+                <h2 class="font-semibold">Freelancer</h2>
+                <p class="text-gray-500">Frontend Web Developer</p>
+
+                <span
+                  class="flex space-x-3 items-center pt-4 text-md purpleTextColor"
+                >
+                  <i class="fa-solid fa-calendar"></i>
+                  <p>Oct 2024 - Nov 2024</p>
+                </span>
+              </div>
+            </div>
+            <!-- Experience 2 end -->
+          </div>
+          <!-- Experience End -->
+
+          <!-- Education Start -->
+          <div class="text-white" id="education" data-aos="fade-left">
+            <span class="flex space-x-2 items-center">
+              <i class="fa-solid fa-graduation-cap text-2xl"></i>
+              <h3 class="text-2xl">Education</h3>
+            </span>
+            <!-- Education 1 start -->
+            <div class="flex space-x-12 pt-8" id="exp1">
+              <div class="relative">
+                <span
+                  class="absolute w-3 h-3 purpleBgColor rounded-full"
+                ></span>
+                <span
+                  class="absolute top-3 left-[.3rem] w-[2px] h-full purpleBgColor"
+                ></span>
+              </div>
+              <div class="" id="exp1-content">
+                <h2 class="font-semibold">
+                  <i class="text-gray-500 text-md font-light">Bsc.</i> Computer
+                  Science
+                </h2>
+                <p class="text-gray-500 italic text-sm">University of Lagos</p>
+
+                <span
+                  class="flex space-x-3 items-center pt-4 text-md purpleTextColor"
+                >
+                  <i class="fa-solid fa-calendar"></i>
+                  <p>Aug 2024 - Present</p>
+                </span>
+              </div>
+            </div>
+            <!-- Education 1 end -->
+
+            <!-- Education 2 start -->
+            <div class="flex space-x-12 pt-8" id="exp2">
+              <div class="relative">
+                <span
+                  class="absolute w-3 h-3 purpleBgColor rounded-full"
+                ></span>
+                <span
+                  class="absolute top-3 left-[.3rem] w-[2px] h-full purpleBgColor"
+                ></span>
+              </div>
+              <div class="" id="exp2-content">
+                <h2 class="font-semibold">Diploma In Web Development</h2>
+                <p class="text-gray-500 italic text-sm">
+                  National Institute Of Information Technology
+                </p>
+
+                <span
+                  class="flex space-x-3 items-center pt-4 text-md purpleTextColor"
+                >
+                  <i class="fa-solid fa-calendar"></i>
+                  <p>Nov 2022 - Jan 2024</p>
+                </span>
+              </div>
+            </div>
+            <!-- Education 2 end -->
+          </div>
+          <!-- Education End -->
+        </div>
+      </section>
+      <!-- Qualification Ends -->
+
+      <!-- Skills Start -->
+
+      <section
+        id="skills"
+        class="mt-6 flex flex-col justify-center items-center"
+      >
+        <h1 class="text-center text-white text-4xl md:text-5xl font-bold">
+          My <span class="purpleTextColor">Skills</span>
+        </h1>
+
+        <!-- <div class="mt-6"> -->
+        <div
+          class="pt-6 text-white flex flex-row justify-between space-x-2 font-semibold md:text-xl md:space-x-8"
+        >
+          <button
+            type="button"
+            class="purpleBgColor px-3 py-1 rounded-lg cursor-pointer"
+            data-filter="all"
+            id="allSkillsBtn"
+          >
+            All
+          </button>
+          <button
+            type="button"
+            class="px-3 py-1 rounded-lg duration-300 transition-all cursor-pointer"
+            data-filter=".language-category"
+            id="langSkillsBtn"
+          >
+            Languages
+          </button>
+          <button
+            type="button"
+            class="px-3 py-1 rounded-lg duration-300 transition-all cursor-pointer"
+            data-filter=".libraries-category"
+            id="libSkillsBtn"
+          >
+            Libraries
+          </button>
+          <button
+            type="button"
+            class="px-3 py-1 rounded-lg duration-300 transition-all cursor-pointer"
+            data-filter=".tools-category"
+            id="toolSkillsBtn"
+          >
+            Tools
+          </button>
+        </div>
+
+        <div
+          class="container mt-8 text-white bg-[#2b2c2f] rounded-lg shadow-2xl shadow-black p-6 border border-[#7857fe] flex flex-col items-center justify-center w-fit"
+          data-aos="flip-up"
+          data-aos-duration="1000"
+        >
+          <div
+            class="grid grid-cols-3 gap-6 py-6 md:gap-8 text-center"
+            data-order="2"
+          >
+            <span class="mix language-category">
+              <i
+                class="devicon-html5-plain colored text-3xl hover:translate-y-2"
+              ></i>
+              <p class="font-semibold pt-1">HTML5</p>
+            </span>
+            <span class="mix language-category">
+              <i class="devicon-css3-plain colored text-3xl"></i>
+              <p class="font-semibold pt-1">CSS3</p>
+            </span>
+            <span class="mix language-category">
+              <i class="devicon-javascript-plain colored text-3xl"></i>
+              <p class="font-semibold pt-1">JavaScript</p>
+            </span>
+            <span class="mix language-category">
+              <i class="devicon-typescript-plain colored text-3xl"></i>
+              <p class="font-semibold pt-1">TypeScript</p>
+            </span>
+            <span class="mix libraries-category">
+              <i class="devicon-react-original colored text-3xl"></i>
+              <p class="font-semibold pt-1">REACT</p>
+            </span>
+            <span class="mix libraries-category">
+              <i class="devicon-tailwindcss-original colored text-3xl"></i>
+              <p class="font-semibold pt-1">TailwindCSS</p>
+            </span>
+            <span class="mix libraries-category">
+              <i class="devicon-redux-original colored text-3xl"></i>
+              <p class="font-semibold pt-1">REDUX</p>
+            </span>
+            <span class="mix libraries-category">
+              <i class="devicon-reactrouter-plain colored text-3xl"></i>
+              <p class="font-semibold pt-1">React-Router</p>
+            </span>
+            <span class="mix tools-category">
+              <i class="devicon-npm-original-wordmark colored text-3xl"></i>
+              <p class="font-semibold pt-1">NPM</p>
+            </span>
+            <span class="mix tools-category">
+              <i class="devicon-git-plain colored text-3xl"></i>
+              <p class="font-semibold pt-1">GIT</p>
+            </span>
+            <span class="mix tools-category">
+              <i class="devicon-github-original colored text-3xl"></i>
+              <p class="font-semibold pt-1">GitHub</p>
+            </span>
+            <span class="mix tools-category">
+              <i class="devicon-vscode-plain colored text-3xl"></i>
+              <p class="font-semibold pt-1">VsCode</p>
+            </span>
+            <span class="mix tools-category">
+              <i class="devicon-devicon-plain colored text-3xl"></i>
+              <p class="font-semibold pt-1">Chrome Dev-Tools</p>
+            </span>
+            <span class="mix tools-category">
+              <i class="devicon-vitejs-plain purpleTextColor text-3xl"></i>
+              <p class="font-semibold pt-1">Vite</p>
+            </span>
+          </div>
+        </div>
+        <!-- </div> -->
+      </section>
+
+      <!-- Skills End -->
+
+      <!-- Contact Start -->
+      <section
+        id="contact"
+        class="py-36 flex flex-col items-center justify-center"
+      >
+        <h1 class="mb-12 text-center text-white text-4xl md:text-5xl font-bold">
+          Contact <span class="purpleTextColor">Me</span>
+        </h1>
+        <div class="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-4">
+          <div
+            class="py-6 px-12 customShadow rounded-lg text-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <i
+              class="fa-solid fa-envelope text-4xl purpleTextColor pb-2 hover:-translate-y-2 hover:transition-all duration-300"
+            ></i>
+            <h2
+              class="purpleTextColor text-2xl font-semibold hover:underline cursor-pointer pb-4"
+            >
+              <a href="mailto:emmasco0207@gmail.com">Email</a>
+            </h2>
+            <p class="text-sm text-gray-600">emmasco0207@gmail.com</p>
+          </div>
+
+          <div
+            class="py-6 px-12 customShadow rounded-lg text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <i
+              class="fa-brands fa-square-whatsapp text-5xl purpleTextColor pb-2 hover:-translate-y-2 hover:transition-all duration-300"
+            ></i>
+            <h2
+              class="purpleTextColor text-2xl font-semibold hover:underline cursor-pointer pb-4"
+            >
+              <a href="https://wa.me/+2348111184177">Whatsapp</a>
+            </h2>
+            <p class="text-sm text-gray-600">+23-811-1184-177</p>
+          </div>
+
+          <div
+            class="py-6 px-12 customShadow rounded-lg text-center"
+            data-aos="fade-down"
+            data-aos-duration="1000"
+          >
+            <i
+              class="fa-brands fa-square-github text-5xl purpleTextColor pb-2 hover:-translate-y-2 hover:transition-all duration-300"
+            ></i>
+            <h2
+              class="purpleTextColor text-2xl font-semibold hover:underline cursor-pointer pb-4"
+            >
+              <a href="https://github.com/OyeyipoEmmanuel">GitHub</a>
+            </h2>
+            <p class="text-sm text-gray-600">@OyeyipoEmmanuel</p>
+          </div>
+
+          <div
+            class="py-6 px-12 customShadow rounded-lg text-center"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <i
+              class="fa-brands fa-square-x-twitter text-5xl purpleTextColor pb-2 hover:-translate-y-2 hover:transition-all duration-300"
+            ></i>
+            <h2
+              class="purpleTextColor text-2xl font-semibold hover:underline cursor-pointer pb-4"
+            >
+              <a href="https://x.com/emma_leo01?s=21">X (Formerly twitter)</a>
+            </h2>
+            <p class="text-sm text-gray-600">@Emma_leo01</p>
+          </div>
+        </div>
+      </section>
+      <!-- Contact End -->
+    </main>
+
+    <footer class="text-center pb-2 purpleTextColor font-bold">
+      &copy 2025 Oyeyipo Emmanuel🪖
+    </footer>
+
+    <!--MIXITUP JS START  -->
+    <script src="https://cdn.jsdelivr.net/npm/mixitup@3/dist/mixitup.min.js"></script>
+    <script>
+      var mixer = mixitup(".container");
+    </script>
+    <!-- MIXITUP JS END -->
+
+    <!-- AOS START -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- AOS END -->
+
+    <script src="./main.js"></script>
+  </body>
+</html>
