@@ -66,14 +66,14 @@ window.addEventListener('scroll', ()=>{
     }
 })
 
-window.addEventListener('load', ()=>{
-    setTimeout(()=>{
-        document.getElementById('content').classList.remove('hidden')
-        document.getElementById('loader').classList.add('hidden')
+// window.addEventListener('load', ()=>{
+//     setTimeout(()=>{
+//         document.getElementById('content').classList.remove('hidden')
+//         document.getElementById('loader').classList.add('hidden')
 
-        AOS.refresh()
-    }, 2000)
+//         AOS.refresh()
+//     }, 2000)
     
-})
+// })
     
 
